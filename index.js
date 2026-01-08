@@ -38,3 +38,78 @@ const check = (x) => {
         console.log("String is not palindrome")
     }
 }
+
+
+// Problem 5: Remove Duplicates from an Array
+// Write a function that removes all duplicate numbers from an array.
+
+const removeDuplicate = (x) => {
+    return [...new Set(x)];
+};
+
+
+// Problem 6: Sum of All Numbers in an Array
+// Write a function that returns the sum of all numbers in an array
+
+const arraySum = (x) => {
+    let sum = 0;
+
+    for (let i = 0; i < x.length; i++) {
+        sum += x[i];
+    }
+
+    return sum;
+};
+
+
+
+// Problem 7: Find Even Numbers in an Array
+// Write a function that returns all even numbers from a given array.
+
+const findEven = (x) => {
+    return x.filter(num => num % 2 === 0);
+};
+
+
+
+// Problem 8: Capitalize First Letter of Each Word
+// Write a function that capitalizes the first letter of each word in a string.
+
+const capitalize = (x) => {
+    return x
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+};
+
+
+
+// Problem 9: Find the Factorial of a Number
+// Write a function that calculates the factorial of a number using a loop.
+
+const factorial = (x) => {
+    if (x < 0) return "Invalid input";
+    let result = 1;
+    for (let i = 1; i <= x; i++) {
+        result *= i;
+    }
+    return result;
+};
+
+
+
+// Problem 10: PingPong Challenge
+// Write a function that prints numbers from 1 to 20.
+const pingPong = () => {
+    for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("PingPong");
+        } else if (i % 3 === 0) {
+            console.log("Ping");
+        } else if (i % 5 === 0) {
+            console.log("Pong");
+        } else {
+            console.log(i);
+        }
+    }
+};
