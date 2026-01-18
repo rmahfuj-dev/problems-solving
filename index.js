@@ -40,6 +40,18 @@ const check = (x) => {
 }
 
 
+
+// Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
+const findMax = arr =>
+    arr.reduce((max, num) => Math.max(max, num), -Infinity);
+
+console.log(findMax([5, 1, 9, 3]));
+
+
+
+
+
 // Problem 5: Remove Duplicates from an Array
 // Write a function that removes all duplicate numbers from an array.
 
